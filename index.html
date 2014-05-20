@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Holly2</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <script type="text/javascript"
+  src="js/dygraph-combined.js"></script>
+</head>
+</head>
+<body>
+
+<div class="container"><H1>Here should be a Graph:</h1></div>
+<div id="graphdiv2"
+  style="width:1000px; height:600px;"></div>
+<script type="text/javascript">
+  g2 = new Dygraph(
+    document.getElementById("graphdiv2"),
+    "Auburn_2013buoy.csv", // path to CSV file
+    {}          // options
+  );
+</script>
+
+</body>
+</html>
